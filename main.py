@@ -88,10 +88,10 @@ while True:
     age = int(input("Enter your age: "))
     user_one = User(name,age)
     user_two = None
-    new_user = input("Would you like to register a new person? Type 'No' to create your bank account. ")
+    new_user = input("Would you like to register a new user? Type 'No' to create your bank account. ")
     if new_user.lower() == 'yes':
-        name = input("Enter the second person's name: ")
-        age = int(input("Enter the second person's age: "))
+        name = input("Enter the second user's name: ")
+        age = int(input("Enter the second user's age: "))
         user_two = User(name, age)
         print("Please create your accounts.")
         user_one_balance = bank_creation(user_one)
